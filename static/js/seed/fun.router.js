@@ -14,10 +14,6 @@ fun.Router = Backbone.Router.extend({
         "dashboard/a:account": "dashboard",
         "dashboard/a:account/o:org": "dashboard",
 
-        "send": "money",
-        "error": "error",
-        "banner": "banner",
-
         "reports": "reports",
         "reports/p:page": "reports",
 
@@ -51,21 +47,6 @@ fun.Router = Backbone.Router.extend({
         // dashboard
         fun.instances.dashboard = new fun.views.dashboard({
             el:"#fun-dashboard"
-        });
-
-        // send money
-        fun.instances.money = new fun.views.money({
-            el:"#fun-money"
-        });
-
-        // cuallix error
-        fun.instances.error = new fun.views.error({
-            el: "#fun-error"
-        });
-
-        // preway banner
-        fun.instances.banner = new fun.views.banner({
-            el: "#fun-banner"
         });
 
         // reports
@@ -133,7 +114,6 @@ fun.Router = Backbone.Router.extend({
             //fun.instances.subheader.render(login);
             fun.instances.login.render();
         }
-
         //fun.instances.footer.render();
     },
     
@@ -201,54 +181,6 @@ fun.Router = Backbone.Router.extend({
             fun.utils.redirect(fun.conf.hash.login);
         }
         //fun.instances.footer.render();
-    },
-
-    money: function(){
-        'use strict';
-        if(fun.utils.loggedIn()){
-            
-            //var sendMoney = translate('sendMoney');
-            
-            fun.utils.hideAll();
-            
-            //fun.instances.navbar.render();
-
-            //fun.instances.subheader.render(sendMoney);
-            
-            //fun.instances.subheader.renderHeadNavReports();
-
-            fun.instances.money.render();
-        } else {
-            fun.utils.redirect(fun.conf.hash.login);
-        }
-        
-        //fun.instances.footer.render();
-    },
-
-    error: function(){
-        'use strict';
-        if(fun.utils.loggedIn()){
-            fun.utils.hideAll();
-
-            fun.instances.error.render();
-        } else {
-            fun.utils.redirect(fun.conf.hash.login);
-        }
-
-        // fun.instances.footer.render();
-    },
-
-    banner: function(){
-        'use strict';
-        if(fun.utils.loggedIn()){
-            fun.utils.hideAll();
-            fun.instances.banner.render();
-
-        } else {
-            fun.utils.redirect(fun.conf.hash.login);
-        }
-
-        // fun.instances.footer.render();
     },
 
     reports: function(page){
