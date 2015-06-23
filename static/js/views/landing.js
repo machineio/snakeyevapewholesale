@@ -22,13 +22,5 @@ fun.views.landing = Backbone.View.extend({
         var template = _.template(fun.utils.getTemplate(fun.conf.templates.landing));
         this.$el.html(template);
         this.$el.show();
-
-        console.log('dada');
-
-        $('#loginModal').modal({
-            'show': true,
-            'backdrop': 'static',
-            'keyboard': true
-        });
     }
 });

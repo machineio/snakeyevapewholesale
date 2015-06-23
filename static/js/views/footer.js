@@ -14,6 +14,14 @@ fun.views.footer = Backbone.View.extend({
         );
         this.$el.html(template);
         this.$el.show();
+
+        $('#loginModal').modal({
+            'show': true,
+            'backdrop': 'static',
+            'keyboard': true
+        });
+
+        console.log('stuff');
     }
 
 });
