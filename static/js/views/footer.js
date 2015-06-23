@@ -30,6 +30,7 @@ fun.views.footer = Backbone.View.extend({
         var account = localStorage.getItem("username", username);
 
         if (typeof account === undefined || account === null || account === ''){
+            $('#signupModal').modal('hide');
             $('#loginModal').modal({
                 'show': true,
                 'backdrop': 'static',
@@ -48,6 +49,13 @@ fun.views.footer = Backbone.View.extend({
         event.preventDefault();
 
         console.log('signup');
+
+        $('#loginModal').modal('hide');
+        $('#signupModal').modal({
+            'show': true,
+            'backdrop': 'static',
+            'keyboard': false
+        });
     },
 
     loginStuff: function(event){

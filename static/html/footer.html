@@ -45,3 +45,53 @@
             </div>
         </div>
     </div>
+
+    <!-- signup Modal popup -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                    <h4 class="modal-title" id="myModalLabel"><%= translate("createYourUserAccount") %></h4>
+                </div>
+                <div class="modal-body">
+
+                    <form id="signup-form" class="form-signup" novalidate="novalidate">
+
+                    <div class="form-group">
+                        <input type="text" id="signup_username" name="signup_username" class="form-control" placeholder="<%= translate("yourUsername") %>">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="signup_firstname" name="signup_firstname" class="form-control" placeholder="<%= translate("yourFirstName") %>">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="signup_lastname" name="signup_lastname" class="form-control" placeholder="<%= translate("yourLastName") %>">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="signup_email" name="signup_email" class="form-control" placeholder="<%= translate("yourEmail") %>">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="signup_phone" name="signup_phone" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="signup_password" name="signup_password" placeholder="<%= translate("password") %>"/>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="<%= translate("confirmPassword") %>"/>
+                    </div>
+                </form>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button id="signup-btn" class="btn btn-lg btn-primary btn-block" type="submit"><%= translate("signUp") %></button>
+                    <button id="fun-login" type="button" class="btn btn-lg btn-default btn-block"><%= translate("login") %></button>
+                </div>
+            </div>
+        </div>
+    </div>
