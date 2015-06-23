@@ -31,7 +31,7 @@ fun.views.footer = Backbone.View.extend({
 
         
 
-        if (typeof account === undefined || account === ''){
+        if (typeof account === undefined || account === null || account === ''){
             $('#loginModal').modal({
                 'show': true,
                 'backdrop': 'static',
