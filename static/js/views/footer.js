@@ -38,6 +38,7 @@ fun.views.footer = Backbone.View.extend({
                 'keyboard': true
             });
         } else {
+            $('#put_username').html(account);
             console.log(account);
             console.log('set this stuff up');
         }
