@@ -75,7 +75,7 @@ fun.Router = Backbone.Router.extend({
         console.log('spawn some fun get stuff going');
 
         if(fun.utils.loggedIn()){
-            fun.utils.redirect(fun.conf.hash.landing);
+            fun.utils.redirect(fun.conf.hash.dashboard);
         } else {
             fun.utils.redirect(fun.conf.hash.landing);
         }
@@ -83,6 +83,15 @@ fun.Router = Backbone.Router.extend({
     },
 
     landing: function(){
+
+        fun.utils.hideAll();
+
+        //fun.instances.navbar.render();
+        //fun.instances.landing.render();
+        fun.instances.footer.render();
+    },
+
+    dashboard: function(){
 
         fun.utils.hideAll();
 
@@ -113,72 +122,6 @@ fun.Router = Backbone.Router.extend({
             fun.instances.navbar.render();
             //fun.instances.subheader.render(login);
             fun.instances.login.render();
-        }
-        //fun.instances.footer.render();
-    },
-    
-    dashboard: function(account){
-        'use strict';
-
-        if(fun.utils.loggedIn()){
-            fun.utils.hideAll();
-            fun.instances.navbar.render();
-            fun.instances.dashboard.render();
-        } else {
-            fun.utils.redirect(fun.conf.hash.login);
-        }
-
-        var account,
-            resourceCount = 0,
-            resources,
-            callbacks,
-            dashboard,
-            message;
-
-        console.log('dashboard parsed account', account);
-
-        if (!account){
-            account = localStorage.getItem('username');
-        } else {
-            if (account.substring(0,1) == ':') {
-                account = account.substring(1);
-            }
-        }
-
-        console.log('dashboard account', account);
-
-        resources = {
-            user: new fun.models.User({'account':account})
-        };
-
-        callbacks = {
-            success: function(model, response){
-                if(++resourceCount == _.keys(resources).length){
-                    //console.log(resources.user);
-                    localStorage.setItem("UserId", resources.user.get('UserId'));
-                    localStorage.setItem("UserCountryCode", resources.user.get('country_code'));
-                    localStorage.setItem("UserPhoneNumber", resources.user.get('phone_number'));
-                    localStorage.setItem("UserEmail",resources.user.get('email'));
-                }
-            },
-            error: function(model, error){
-                console.log('resources error');
-            }
-        };
-
-        if(fun.utils.loggedIn()){
-
-            fun.utils.hideAll();
-            fun.instances.navbar.render();
-
-            fun.instances.dashboard.render();
-
-            for (message in resources){
-                resources[message].fetch(callbacks);
-            }
-
-        } else {
-            fun.utils.redirect(fun.conf.hash.login);
         }
         //fun.instances.footer.render();
     },

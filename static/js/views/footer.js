@@ -27,11 +27,22 @@ fun.views.footer = Backbone.View.extend({
             this.password = this.$('#password');
         }
 
-        $('#loginModal').modal({
-            'show': true,
-            'backdrop': 'static',
-            'keyboard': true
-        });
+        var account = localStorage.getItem("username", username);
+
+        
+
+        if (typeof account === undefined || account === ''){
+            $('#loginModal').modal({
+                'show': true,
+                'backdrop': 'static',
+                'keyboard': true
+            });
+        } else {
+            console.log(account);
+            console.log('set this stuff up');
+        }
+
+        
     },
 
     signupStuff: function(event){
