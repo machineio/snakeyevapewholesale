@@ -37,6 +37,10 @@ fun.views.footer = Backbone.View.extend({
             this.firstName = this.$('#signup_firstname');
             this.lastName = this.$('#signup_lastname');
             this.email = this.$('#signup_email');
+
+            this.confirmPassword = this.$('#signup_confirm_password');
+
+            
         }
 
         var account = localStorage.getItem("username", username);
@@ -207,10 +211,10 @@ fun.views.footer = Backbone.View.extend({
                     minlength: 8,
                     required: true
                 },
-                confirm_password: {
+                signup_confirm_password: {
                     required: false,
                     minlength: 8,
-                    equalTo: '#signup_password'
+                    equalTo: '#signup_confirm_password'
                     
                 }
             }
