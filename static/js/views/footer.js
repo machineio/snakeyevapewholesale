@@ -29,8 +29,6 @@ fun.views.footer = Backbone.View.extend({
 
         var account = localStorage.getItem("username", username);
 
-        
-
         if (typeof account === undefined || account === null || account === ''){
             $('#loginModal').modal({
                 'show': true,
