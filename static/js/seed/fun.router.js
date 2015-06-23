@@ -153,7 +153,7 @@ fun.Router = Backbone.Router.extend({
 
     logout: function(){
         //var goodBye = translate('goodBye');
-        //fun.utils.logout();
+        fun.utils.logout();
         //fun.utils.hideAll();
         //fun.instances.navbar.render()
         //fun.instances.subheader.render(goodBye);      
