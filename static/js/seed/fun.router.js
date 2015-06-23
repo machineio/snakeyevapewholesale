@@ -75,7 +75,7 @@ fun.Router = Backbone.Router.extend({
         console.log('spawn some fun get stuff going');
 
         if(fun.utils.loggedIn()){
-            fun.utils.redirect(fun.conf.hash.dashboard);
+            fun.utils.redirect(fun.conf.hash.landing);
         } else {
             fun.utils.redirect(fun.conf.hash.landing);
         }
