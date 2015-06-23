@@ -71,7 +71,6 @@
 
                         <div class="col-md-12">
                             <form id="signup-form" class="form-signup" novalidate="novalidate">
-                                <h3><%= translate("createYourUserAccount") %></h3>
 
                                 <div class="form-group">
                                     <input type="text" id="reg_signup_username" name="reg_signup_username" class="form-control" placeholder="<%= translate("yourUsername") %>">
@@ -168,11 +167,6 @@
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="reg_subsidiary_reg_num" name="reg_subsidiary_reg_num" placeholder="<%= translate("ifCompanySubsidiaryRegistrationNum") %>"/>
                                 </div>
-
-
-                                <button id="signup-btn" class="btn btn-lg btn-primary btn-block" type="submit"><%= translate("signUp") %></button>
-
-                                <p>By clicking "Sign up", you agree to our terms of service and privacy policy. We will send you account related emails occasionally.</p>
                             </form>
 
                         </div>
@@ -181,6 +175,7 @@
                 <div class="modal-footer">
                     <button id="signup-btn" class="btn btn-lg btn-primary btn-block" type="submit"><%= translate("signUp") %></button>
                     <button id="fun-login" type="button" class="btn btn-lg btn-default btn-block"><%= translate("login") %></button>
+                    <p>By clicking "Sign up", you agree to our terms of service and privacy policy. We will send you account related emails occasionally.</p>
                 </div>
             </div>
         </div>
