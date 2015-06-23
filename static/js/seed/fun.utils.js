@@ -143,6 +143,13 @@ fun.utils.logout = function(callbacks){
             }
         }
     });
+
+    // Clean storage outside ajax call, this way we always clean the stuff.
+    if (typeof(Storage) != "undefined") {
+        localStorage.removeItem('username');
+        localStorage.removeItem('profile');
+        sessionStorage.removeItem('context');
+    }
 };
 
 

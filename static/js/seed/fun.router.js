@@ -152,13 +152,14 @@ fun.Router = Backbone.Router.extend({
     },
 
     logout: function(){
-        var goodBye = translate('goodBye');
-        fun.utils.logout();
-        fun.utils.hideAll();
-        fun.instances.navbar.render()
-        fun.instances.subheader.render(goodBye);      
-        fun.instances.login.render();
+        //var goodBye = translate('goodBye');
+        //fun.utils.logout();
+        //fun.utils.hideAll();
+        //fun.instances.navbar.render()
+        //fun.instances.subheader.render(goodBye);      
+        //fun.instances.login.render();
         //fun.instances.footer.render();
+        fun.utils.redirect(fun.conf.hash.home);
     }
 
 });
