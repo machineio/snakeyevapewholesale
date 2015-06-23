@@ -10,11 +10,22 @@ fun.views.footer = Backbone.View.extend({
     },
     
     render: function(){
-        var template = _.template(
-            fun.utils.getTemplate(fun.conf.templates.footer)
-        );
+        
         this.$el.html(template);
         this.$el.show();
+
+        if (!this.$el.html()){
+            var template = _.template(
+                fun.utils.getTemplate(fun.conf.templates.footer)
+            );
+            this.$el.html(template);
+            
+            // Cache the DOM stuff
+            this.loginError = this.$('#signin-alert');
+            // form inputs
+            this.username = this.$('#username');
+            this.password = this.$('#password');
+        }
 
         $('#loginModal').modal({
             'show': true,
