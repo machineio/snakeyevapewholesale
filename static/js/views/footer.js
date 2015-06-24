@@ -126,8 +126,6 @@ fun.views.footer = Backbone.View.extend({
         var password = this.password.val();
         var view = this;
 
-        console.log(password, username);
-
         var loginSuccess = function(view, loginError){
             // Clear the stuff from the inputs ;)
             view.$('#username').val('');
