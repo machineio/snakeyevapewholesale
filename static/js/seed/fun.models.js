@@ -55,6 +55,35 @@ fun.models.Register = Backbone.Model.extend({
 });
 
 
+fun.models.Company = Backbone.Model.extend({
+    idAttribute: 'uuid',
+
+    urlRoot: fun.conf.urls.companies,
+
+    sync: function(method, model, options){
+        options.contentType = 'application/json';
+        //delete options.headers["Authorization"];
+        return Backbone.sync(method, model, options);
+    }
+})
+
+
+fun.models.Companies = Backbone.Collection.extend({
+    model: fun.models.Company,
+
+    urlRoot: fun.conf.urls.companies,
+
+    url: function(){
+        return this.urlRoot;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+})
+
+
 fun.models.Assign = Backbone.Model.extend({
     
     idAttribute: 'AccountNum',
