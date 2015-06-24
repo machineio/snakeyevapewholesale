@@ -89,6 +89,7 @@ fun.Router = Backbone.Router.extend({
         //fun.instances.navbar.render();
         //fun.instances.landing.render();
         fun.instances.footer.render();
+        console.log('D:');
     },
 
     dashboard: function(){
@@ -98,6 +99,7 @@ fun.Router = Backbone.Router.extend({
         //fun.instances.navbar.render();
         //fun.instances.landing.render();
         fun.instances.footer.render();
+        console.log('mae?');
     },
 
     signup: function(){
