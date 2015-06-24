@@ -84,9 +84,7 @@ fun.views.footer = Backbone.View.extend({
                 'keyboard': true
             });
         } else {
-            $('#put_username').html(account);
-            console.log(account);
-            console.log('set this stuff up');
+            console.log('check this stuff up');
         }
 
         
@@ -154,6 +152,7 @@ fun.views.footer = Backbone.View.extend({
                             // Store
                             localStorage.setItem("username", username);
                         }
+                        $('#put_username').html(username);
                         loginSuccess(view, loginError);
                         $('#loginModal').modal('hide');
                         break;
