@@ -151,8 +151,6 @@ fun.utils.logout = function(callbacks){
         localStorage.removeItem('profile');
         sessionStorage.removeItem('context');
     }
-
-    fun.utils.redirect('http://snakeyevapeshop.com');
 };
 
 

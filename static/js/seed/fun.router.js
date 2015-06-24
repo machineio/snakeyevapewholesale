@@ -161,7 +161,8 @@ fun.Router = Backbone.Router.extend({
         //fun.instances.subheader.render(goodBye);      
         //fun.instances.login.render();
         //fun.instances.footer.render();
-        fun.utils.redirect(fun.conf.hash.home);
+        fun.utils.redirect('http://snakeyevapeshop.com');
+        //fun.utils.redirect(fun.conf.hash.home);
     }
 
 });
