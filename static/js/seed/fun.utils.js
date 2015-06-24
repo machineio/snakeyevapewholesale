@@ -84,6 +84,7 @@ fun.utils.login = function(account, password, callbacks) {
         url: fun.conf.urls.login,
         dataType: 'json',
         beforeSend: function(xhr){
+            console.log(account, password);
             auth = account + ':' + password;
             var words  = CryptoJS.enc.Latin1.parse(auth);
             var base64 = CryptoJS.enc.Base64.stringify(words);
