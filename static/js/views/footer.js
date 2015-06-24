@@ -49,8 +49,8 @@ fun.views.footer = Backbone.View.extend({
             this.newAccount = this.account;
             this.email = this.$('#reg_signup_email');
             this.phone = this.$('#reg_signup_phone');
-            this.password = this.$('#reg_signup_password');
-            this.confirmPassword = this.$('#reg_confirm_password');
+            this.signupPassword = this.$('#reg_signup_password');
+            this.signupConfirmPassword = this.$('#reg_confirm_password');
 
             this.companyName = this.$('#reg_company_name');
             this.streetAddress = this.$('#reg_street_address');
@@ -72,8 +72,6 @@ fun.views.footer = Backbone.View.extend({
             this.vatTaxIdFileNumber = this.$('#reg_vat_tax_id');
             this.ifCompanySubsidiaryName = this.$('#reg_subsidiary_name');
             this.ifCompanySubsidiaryRegistrationNum = this.$('#reg_subsidiary_reg_num');
-
-            
         }
 
         var account = localStorage.getItem("username", username);
@@ -127,6 +125,8 @@ fun.views.footer = Backbone.View.extend({
         var username = this.username.val();
         var password = this.password.val();
         var view = this;
+
+        console.log(password, username);
 
         var loginSuccess = function(view, loginError){
             // Clear the stuff from the inputs ;)
@@ -212,8 +212,8 @@ fun.views.footer = Backbone.View.extend({
         signupError = this.signupError;
         account = this.account.val();
         firstname = this.firstname.val();
-        password = this.password.val();
-        confirmPassword = this.confirmPassword.val();
+        password = this.signupPassword.val();
+        confirmPassword = this.signupConfirmPassword.val();
         email = this.email.val();
         phone = this.phone.val();
 
