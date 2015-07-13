@@ -276,7 +276,7 @@ fun.views.footer = Backbone.View.extend({
                     required: true
                 },
                 reg_zip_postal: {
-                    minlength: 6,
+                    minlength: 5,
                     required: true
                 },
                 reg_country_company: {
