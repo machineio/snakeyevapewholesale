@@ -4122,12 +4122,12 @@ ul.post-meta-infos {
 	/* Standard box */
 	
 	.services-box.standard-box {
-		text-align:left;
+		text-align:center;
 		}
 	.services-box.standard-box .icon-box {
 		width:25px;
 		height:25px;
-		float:left;
+		float:center;
 		margin:0 10px  0 0;
 		padding:0;
 		line-height:14px;
