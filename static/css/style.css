@@ -7721,7 +7721,7 @@ blockquote.style5 {
 
 /* Grid gallery */
 	.grid-gallery {
-	  width:100%;
+	  width:110%;
 	}
 	/* clear fix */
 	.grid-gallery:after {
