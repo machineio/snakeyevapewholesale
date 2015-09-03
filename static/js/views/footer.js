@@ -342,6 +342,8 @@ fun.views.footer = Backbone.View.extend({
                 view.$('#reg_subsidiary_reg_num').val('');
 
                 signupError.hide();
+
+                $('#signupModal').modal('hide');
             },
 
             error: function(model, error){
