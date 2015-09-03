@@ -291,10 +291,6 @@ fun.views.footer = Backbone.View.extend({
                     minlength: 6,
                     required: true
                 },
-                reg_fax: {
-                    minlength: 6,
-                    required: true
-                },
                 reg_company_email: {
                     minlength: 6,
                     required: true
