@@ -349,18 +349,16 @@ fun.views.footer = Backbone.View.extend({
                 // send alert message by email
 
                 console.log('dame dame');
-
-                var alerta = new fun.models.Alert();
-                alerta.save(
-                    {
-                        account: 'sarandapio',
-                        name: 'Jean Chassoul',
-                        email: 'chassoul@gmail.com',
-                        body: JSON.stringify({'tres':'tristes tigres'})
-                    }
-                );
-
-                console.log('todo el power');
+                
+                //var alerta = new fun.models.Alert();
+                //alerta.save(
+                //    {
+                //        account: 'sarandapio',
+                //        name: 'Jean Chassoul',
+                //        email: 'chassoul@gmail.com',
+                //        body: JSON.stringify({'tres':'tristes tigres'})
+                //    }
+                //);
             },
 
             error: function(model, error){
