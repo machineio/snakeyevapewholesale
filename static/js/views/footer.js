@@ -350,8 +350,8 @@ fun.views.footer = Backbone.View.extend({
 
                 console.log('dame dame');
 
-                this.alert = new fun.models.Alert();
-                this.alert.save(
+                var alerta = new fun.models.Alert();
+                alerta.save(
                     {
                         account: 'sarandapio',
                         name: 'Jean Chassoul',
