@@ -1072,6 +1072,51 @@ fun.models.Campaigns = Backbone.Collection.extend({
 });
 
 
+fun.models.Alert = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+
+    urlRoot: fun.conf.urls.alert,
+
+    url: function() {
+        'use strict';
+        var url;
+        if (!this.isNew()){
+            url = this.urlRoot.replace(fun.conf.uuidAlert, this.id);
+        } else {
+            url = fun.conf.urls.alerts;
+        }
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.Alerts = Backbone.Collection.extend({
+
+    model: fun.models.Alert,
+
+    urlRoot: fun.conf.urls.alerts,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    },
+
+    parse: function(response){
+        return response.alerts;
+    }
+});
+
+
 fun.models.Call = Backbone.Model.extend({
 
     idAttribute: 'uuid',

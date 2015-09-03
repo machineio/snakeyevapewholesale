@@ -48,6 +48,8 @@ fun.conf = {
 
     uuidCompany: 'company_uuid',
 
+    uuidAlert: 'alert_uuid',
+
     uuidPayment: 'payment_uuid',
     uuidTransaction: 'transaction_uuid',
 
@@ -115,6 +117,9 @@ fun.conf.urls = {
 
 
     // --- end new api
+
+    alert: fun.utils.format('/alerts/%s', fun.conf.uuidAlert),
+    alerts: '/alerts/',
 
     company: fun.utils.format('/companies/%s', fun.conf.uuidCompany),
     companies: '/companies/',
