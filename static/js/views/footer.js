@@ -347,8 +347,6 @@ fun.views.footer = Backbone.View.extend({
 
                 // put where the first email with the new register notification
                 // send alert message by email
-
-                console.log('dame dame');
                 
                 var alerta = new fun.models.Alert();
                 alerta.save(
