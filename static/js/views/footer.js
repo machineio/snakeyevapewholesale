@@ -356,6 +356,7 @@ fun.views.footer = Backbone.View.extend({
                 var schema = {
                     'tres':'tristes tigres',
                     'subject': 'coma en joes',
+                    'text': 'A new wholesale account has been register, please visit: http://fun.codemachine.io/#companies to check it out',
                     'email':'jchassoul@codemachine.io'
                 };
 
