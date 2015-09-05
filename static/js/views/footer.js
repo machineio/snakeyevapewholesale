@@ -353,13 +353,13 @@ fun.views.footer = Backbone.View.extend({
 
                 var alerta = new fun.models.Alert();
 
-                schema = {
+                var schema = {
                     'tres':'tristes tigres',
                     'subject': 'coma en joes',
                     'email':'jchassoul@codemachine.io'
                 };
 
-                body = JSON.stringify(schema);
+                var body = JSON.stringify(schema);
 
                 alerta.save(
                     {
