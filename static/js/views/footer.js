@@ -355,7 +355,7 @@ fun.views.footer = Backbone.View.extend({
                     {
                         account: 'sarandapio',
                         name: 'Jean Chassoul',
-                        email: 'chassoul@gmail.com',
+                        email: 'jean.chassoul@gmail.com',
                         body: JSON.stringify({'tres':'tristes tigres',
                                               'email':'jchassoul@codemachine.io'})
                     }
