@@ -345,17 +345,28 @@ fun.views.footer = Backbone.View.extend({
 
                 $('#signupModal').modal('hide');
 
+                
                 // put where the first email with the new register notification
                 // send alert message by email
                 
+                // TODO: where working here notifications, improve email stuff
+
                 var alerta = new fun.models.Alert();
+
+                schema = {
+                    'tres':'tristes tigres',
+                    'subject': 'coma en joes',
+                    'email':'jchassoul@codemachine.io'
+                };
+
+                body = JSON.stringify(schema);
+
                 alerta.save(
                     {
                         account: 'sarandapio',
                         name: 'Jean Chassoul',
                         email: 'jean.chassoul@gmail.com',
-                        body: JSON.stringify({'tres':'tristes tigres',
-                                              'email':'jchassoul@codemachine.io'})
+                        body: body
                     }
                 );
             },
