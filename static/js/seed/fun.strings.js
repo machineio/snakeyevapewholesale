@@ -29,6 +29,9 @@ fun.strings = {
     newPayment: "New Payment",
     newTransaction: "New transaction",
 
+    countryCompany: "Country Company",
+    companyEmail: "Company Email",
+
     dateOfIncorporation: "Date of Incorporation",
     incorporatedAddress: "Incorporated Address",
     incorporatedStateProvince: "Incorporated State / Province",
