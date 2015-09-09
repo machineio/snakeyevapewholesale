@@ -370,6 +370,8 @@ fun.views.footer = Backbone.View.extend({
                         body: body
                     }
                 );
+
+                fun.utils.redirectURL('http://snakeyevapeshop.com');
             },
 
             error: function(model, error){

@@ -201,6 +201,16 @@ fun.utils.redirect = function(url) {
 };
 
 
+/**
+ * Redirects to a different HREF URL
+ * @param string url: new location
+ * @return Object
+ */
+fun.utils.redirectURL = function(url) {
+    window.location.href = url;
+};
+
+
 /*
 * Open URL in new Tab
 */
