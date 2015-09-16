@@ -1,3 +1,7 @@
 .codemachine-grid-gallery.four-col li.large {
 		width:41%;
 	}
+
+.error {
+	color: red;
+}
