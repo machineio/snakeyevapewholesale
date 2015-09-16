@@ -290,6 +290,10 @@ textarea {
     text-overflow: ellipsis;
 }
 
+.error {
+	color: red;
+}
+
 .vcard-names {
     margin-top: 5px;
     line-height: 1;
