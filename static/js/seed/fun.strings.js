@@ -28,6 +28,7 @@ fun.strings = {
     exp_month: "Exp Month",
     newPayment: "New Payment",
     newTransaction: "New transaction",
+    incorporatedNumberInternational: "Incorporated Number (Internaltional Only)",
 
     countryCompany: "Country Company",
     companyEmail: "Company Email",
