@@ -31,7 +31,7 @@ fun.strings = {
 
     countryCompany: "Country Company",
     companyEmail: "Company Email",
-
+    incorporatedNumberInternational: "Incorporated Number (Internaltional Only)",
     dateOfIncorporation: "Date of Incorporation",
     incorporatedAddress: "Incorporated Address",
     incorporatedStateProvince: "Incorporated State / Province",
