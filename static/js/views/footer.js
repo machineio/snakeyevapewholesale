@@ -298,6 +298,10 @@ fun.views.footer = Backbone.View.extend({
                 reg_legal_company_name: {
                     minlength: 6,
                     required: true
+                },
+                reg_federal_tax_id: {
+                    minlength: 9,
+                    required: true
                 }
 
             }
