@@ -71,25 +71,18 @@ fun.Router = Backbone.Router.extend({
     },
     
     home: function(){
-
-        console.log('spawn some fun get stuff going');
-
         if(fun.utils.loggedIn()){
             fun.utils.redirect(fun.conf.hash.dashboard);
         } else {
             fun.utils.redirect(fun.conf.hash.landing);
         }
-        fun.instances.footer.render();
     },
 
     landing: function(){
-
         fun.utils.hideAll();
-
         //fun.instances.navbar.render();
         //fun.instances.landing.render();
         fun.instances.footer.render();
-        console.log('D:');
     },
 
     dashboard: function(){
@@ -99,7 +92,6 @@ fun.Router = Backbone.Router.extend({
         //fun.instances.navbar.render();
         //fun.instances.landing.render();
         fun.instances.footer.render();
-        console.log('mae?');
     },
 
     signup: function(){
