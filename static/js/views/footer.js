@@ -96,13 +96,14 @@ fun.views.footer = Backbone.View.extend({
 
         $('#loginModal').on('hidden.bs.modal', function(e){
             console.log('do something...');
+            $('#signupModal').modal({
+                'show': true,
+                'backdrop': 'static',
+                'keyboard': false
+            });
         })
 
-        //$('#signupModal').modal({
-        //    'show': true,
-        //    'backdrop': 'static',
-        //    'keyboard': false
-        //});
+        
     },
 
     login: function(event){
