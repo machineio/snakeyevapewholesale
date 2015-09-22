@@ -95,7 +95,6 @@ fun.views.footer = Backbone.View.extend({
         console.log("login popup event");
 
         //test this stuff out
-        $('#signupModal').modal('hide');
         $('#loginModal').modal({
             'show': true,
             'backdrop': 'static',
