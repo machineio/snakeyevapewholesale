@@ -3,9 +3,7 @@ fun.views.footer = Backbone.View.extend({
     events: {
         "click #login-btn": "login",
         "click #fun-signup": "signupPopup",
-        "click #signup-btn": "signup",
-        "click #fun-login": "loginPopup"
-
+        "click #signup-btn": "signup"
     },
 
     initialize: function(options) {
@@ -77,11 +75,10 @@ fun.views.footer = Backbone.View.extend({
         var account = localStorage.getItem("username", username);
 
         if (typeof account === undefined || account === null || account === ''){
-            $('#signupModal').modal('hide');
             $('#loginModal').modal({
                 'show': true,
                 'backdrop': 'static',
-                'keyboard': true
+                'keyboard': false
             });
         } else {
             console.log('check this stuff up');
@@ -90,29 +87,22 @@ fun.views.footer = Backbone.View.extend({
         
     },
 
-    loginPopup: function(event){
-        event.preventDefault();
-        console.log("login popup event");
-
-        //test this stuff out
-        $('#loginModal').modal({
-            'show': true,
-            'backdrop': 'static',
-            'keyboard': false
-        });
-    },
-
     signupPopup: function(event){
         event.preventDefault();
         console.log("signup popup event");
 
         // test this shit out
         $('#loginModal').modal('hide');
-        $('#signupModal').modal({
-            'show': true,
-            'backdrop': 'static',
-            'keyboard': false
-        });
+
+        $('#loginModal').on('hidden.bs.modal', function(e){
+            console.log('do something...');
+        })
+
+        //$('#signupModal').modal({
+        //    'show': true,
+        //    'backdrop': 'static',
+        //    'keyboard': false
+        //});
     },
 
     login: function(event){
