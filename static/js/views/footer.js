@@ -89,21 +89,14 @@ fun.views.footer = Backbone.View.extend({
 
     signupPopup: function(event){
         event.preventDefault();
-        console.log("signup popup event");
-
-        // test this shit out
         $('#loginModal').modal('hide');
-
         $('#loginModal').on('hidden.bs.modal', function(e){
-            console.log('do something...');
             $('#signupModal').modal({
                 'show': true,
                 'backdrop': 'static',
                 'keyboard': false
             });
         })
-
-        
     },
 
     login: function(event){
