@@ -87,9 +87,51 @@ fun.Router = Backbone.Router.extend({
             el:"#fun-settings"
         });
 
+        // vaping guide
         fun.instances.vapingGuide = new fun.views.vapingGuide({
             el:"#fun-vaping-guide"
         });
+
+        // industry research
+        fun.instances.industryResearch = new fun.views.industryResearch({
+            el:"#fun-industry-research"
+        });
+
+        // filling-tank
+        fun.instances.fillingTank = new fun.views.fillingTank({
+            el:"#fun-filling-tank"
+        });
+
+        // filling-cartomizers
+        fun.instances.fillingCartomizers = new fun.views.fillingCartomizers({
+            el:"#fun-filling-cartomizers"
+        });
+
+        // about-rebuildables
+        fun.instances.aboutRebuildables = new fun.views.aboutRebuildables({
+            el:"#fun-about-rebuildables"
+        });
+
+        // coil-building 
+        fun.instances.coilBuilding = new fun.views.coilBuilding({
+            el:"#fun-coil-building"
+        });
+
+        // rda-w-cotton-agi 
+        fun.instances.rdaWcottonAgi = new fun.views.rdaWcottonAgi({
+            el:"#fun-rda-w-cotton-agi"
+        });
+
+        // building-rba-kayfun
+        fun.instances.buildingRbaKayfun = new fun.views.({
+            el:"#fun-building-rba-kayfun"
+        });
+
+        // building-rba-kayfun
+        fun.instances.rbaWdualHelios = new fun.views.({
+            el:"#fun-rba-w-dual-helios"
+        });
+
 
         // footer
         fun.instances.footer = new fun.views.footer({
@@ -157,6 +199,12 @@ fun.Router = Backbone.Router.extend({
     buildingRbaKayfun: function(){
         fun.utils.hideAll();
         fun.instances.buildingRbaKayfun.render();
+        fun.instances.footer.render();
+    },
+
+    rbaWdualHelios: function(){
+        fun.utils.hideAll();
+        fun.instances.rbaWdualHelios.render();
         fun.instances.footer.render();
     },
 

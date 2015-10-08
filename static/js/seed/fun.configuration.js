@@ -197,6 +197,7 @@ fun.conf.templates = {
     coilBuilding: fun.utils.format('%s/coil-building.html', fun.conf.html),
     rdaWcottonAgi: fun.utils.format('%s/rda-w-cotton-agi.html', fun.conf.html),
     buildingRbaKayfun: fun.utils.format('%s/building-rba-kayfun.html', fun.conf.html),
+    
 
 
     accountListItem: fun.utils.format('%s/accountListItem.html', fun.conf.html),
