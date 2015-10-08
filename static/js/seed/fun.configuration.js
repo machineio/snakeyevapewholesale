@@ -197,6 +197,7 @@ fun.conf.templates = {
     coilBuilding: fun.utils.format('%s/coil-building.html', fun.conf.html),
     rdaWcottonAgi: fun.utils.format('%s/rda-w-cotton-agi.html', fun.conf.html),
     buildingRbaKayfun: fun.utils.format('%s/building-rba-kayfun.html', fun.conf.html),
+    dualHelios: fun.utils.format('%s/dual-helios.html', fun.conf.html),
 
 
 
@@ -290,6 +291,7 @@ fun.conf.hash = {
     coilBuilding: '#coil-building',
     rdaWcottonAgi: '#rda-w-cotton-agi',
     buildingRbaKayfun: '#building-rba-kayfun',
+    dualHelios: '#dual-helios',
 
 
     dashboard : '#dashboard',
