@@ -111,7 +111,49 @@ fun.Router = Backbone.Router.extend({
     vapingGuide: function(){
         fun.utils.hideAll();
 
-        console.log('todo el mundo');
+        console.log('caping guide');
+    },
+
+    industryResearch: function(){
+        fun.utils.hideAll();
+
+        console.log('industry research');
+    },
+
+    fillingRank: function(){
+        fun.utils.hideAll();
+
+        console.log('filling rank');
+    },
+
+    fillingCartomizers: function(){
+        fun.utils.hideAll();
+
+        console.log('filling cartomizers');
+    },
+
+    aboutRebuildables: function(){
+        fun.utils.hideAll();
+
+        console.log('about rebuildables');
+    },
+
+    coilBuilding: function(){
+        fun.utils.hideAll();
+
+        console.log('coil building');
+    },
+
+    rdaWcottonAgi: function(){
+        fun.utils.hideAll();
+
+        console.log('rda wcotton agi');
+    },
+
+    buildingRbaKayfun: function(){
+        fun.utils.hideAll();
+
+        console.log('building rba kayfun');
     },
 
     dashboard: function(){
