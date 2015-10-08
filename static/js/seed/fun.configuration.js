@@ -150,7 +150,6 @@ fun.conf.urls = {
 
     billingsRecordsStart: fun.utils.format('/billings/records/start/%s', fun.conf.startTime),
     billingsRecordsStartEnd: fun.utils.format('/billings/records/start/%s/end/%s', fun.conf.startTime, fun.conf.endTime),
-
 };
 
 /*

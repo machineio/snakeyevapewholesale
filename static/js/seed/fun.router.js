@@ -87,6 +87,10 @@ fun.Router = Backbone.Router.extend({
             el:"#fun-settings"
         });
 
+        fun.instances.vapingGuide = new fun.views.vapingGuide({
+            el:"#fun-vaping-guide"
+        });
+
         // footer
         fun.instances.footer = new fun.views.footer({
             el:"#fun-footer"
@@ -110,7 +114,7 @@ fun.Router = Backbone.Router.extend({
 
     vapingGuide: function(){
         fun.utils.hideAll();
-
+        fun.instances.vapingGuide.render();
         console.log('vaping guide');
     },
 
