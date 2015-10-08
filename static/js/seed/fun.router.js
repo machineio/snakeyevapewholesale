@@ -111,7 +111,7 @@ fun.Router = Backbone.Router.extend({
     vapingGuide: function(){
         fun.utils.hideAll();
 
-        console.log('caping guide');
+        console.log('vaping guide');
     },
 
     industryResearch: function(){
