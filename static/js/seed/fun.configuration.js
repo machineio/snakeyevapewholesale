@@ -188,6 +188,19 @@ fun.conf.templates = {
     
     dashboard: fun.utils.format('%s/dashboard.html', fun.conf.html),
 
+
+    vapingGuide: fun.utils.format('%s/vaping-guide.html', fun.conf.html),
+
+    industryResearch: fun.utils.format('%s/industry-research.html', fun.conf.html),
+    fillingRank: fun.utils.format('%s/filling-tank.html', fun.conf.html),
+    fillingCartomizers: fun.utils.format('%s/filling-cartomizers.html', fun.conf.html),
+    aboutRebuildables: fun.utils.format('%s/about-rebuildables.html', fun.conf.html),
+    coilBuilding: fun.utils.format('%s/coil-building.html', fun.conf.html),
+    rdaWcottonAgi: fun.utils.format('%s/rda-w-cotton-agi.html', fun.conf.html),
+    buildingRbaKayfun: fun.utils.format('%s/building-rba-kayfun.html', fun.conf.html),
+
+
+
     accountListItem: fun.utils.format('%s/accountListItem.html', fun.conf.html),
     
     recordRow: fun.utils.format('%s/recordRow.html', fun.conf.html),
@@ -253,6 +266,9 @@ fun.conf.templates = {
 
 /*
  Hash tags for backbone.js router
+
+< coil-building rda-w-cotton-agi building-rba-kayfun rda-w-dual-helios>
+
 */
 fun.conf.hash = {
     home: '#home',
@@ -269,6 +285,17 @@ fun.conf.hash = {
     signup: '#signup',
     login: '#login',
 
+    vapingGuide: '#vaping-guide',
+    industryResearch: '#industry-research',
+    fillingRank: '#filling-tank',
+    fillingCartomizers: '#filling-cartomizers',
+    aboutRebuildables: '#about-rebuildables',
+    coilBuilding: '#coil-building',
+    rdaWcottonAgi: '#rda-w-cotton-agi',
+    buildingRbaKayfun: '#building-rba-kayfun',
+
+
+
     dashboard : '#dashboard',
     dashboardWithAccount: '#dashboard/a{account}',
 
@@ -281,6 +308,8 @@ fun.conf.hash = {
     teams: '#teams',
     reports: '#reports',
     reportsWithPage: '#reports/p{page}',
+
+
     
     settings: '#settings'
 };
