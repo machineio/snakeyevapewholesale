@@ -2,6 +2,20 @@ fun.Router = Backbone.Router.extend({
 
     /*
      Seed routes
+
+
+    
+    vapingGuide: '#vaping-guide',
+    industryResearch: '#industry-research',
+    fillingRank: '#filling-tank',
+    fillingCartomizers: '#filling-cartomizers',
+    aboutRebuildables: '#about-rebuildables',
+    coilBuilding: '#coil-building',
+    rdaWcottonAgi: '#rda-w-cotton-agi',
+    buildingRbaKayfun: '#building-rba-kayfun',
+
+
+
     */
     routes: {
         "": "home",
@@ -13,6 +27,15 @@ fun.Router = Backbone.Router.extend({
         "dashboard": "dashboard",        
         "dashboard/a:account": "dashboard",
         "dashboard/a:account/o:org": "dashboard",
+
+        "vaping-guide": "vapingGuide",
+        "industry-research": "industryResearch",
+        "filling-rank": "fillingRank",
+        "filling-cartomizers":"fillingCartomizers",
+        "about-rebuildables": "aboutRebuildables",
+        "coil-building": "coilBuilding",
+        "rda-w-cotton-agi":"rdaWcottonAgi",
+        "building-rba-kayfun":"buildingRbaKayfun",
 
         "reports": "reports",
         "reports/p:page": "reports",
@@ -83,6 +106,12 @@ fun.Router = Backbone.Router.extend({
         //fun.instances.navbar.render();
         //fun.instances.landing.render();
         fun.instances.footer.render();
+    },
+
+    vapingGuide: function(){
+        fun.utils.hideAll();
+
+        console.log('todo el mundo');
     },
 
     dashboard: function(){
