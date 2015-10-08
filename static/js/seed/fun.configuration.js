@@ -266,9 +266,6 @@ fun.conf.templates = {
 
 /*
  Hash tags for backbone.js router
-
-< coil-building rda-w-cotton-agi building-rba-kayfun rda-w-dual-helios>
-
 */
 fun.conf.hash = {
     home: '#home',
@@ -285,6 +282,7 @@ fun.conf.hash = {
     signup: '#signup',
     login: '#login',
 
+
     vapingGuide: '#vaping-guide',
     industryResearch: '#industry-research',
     fillingRank: '#filling-tank',
@@ -293,7 +291,6 @@ fun.conf.hash = {
     coilBuilding: '#coil-building',
     rdaWcottonAgi: '#rda-w-cotton-agi',
     buildingRbaKayfun: '#building-rba-kayfun',
-
 
 
     dashboard : '#dashboard',
@@ -309,7 +306,5 @@ fun.conf.hash = {
     reports: '#reports',
     reportsWithPage: '#reports/p{page}',
 
-
-    
     settings: '#settings'
 };
