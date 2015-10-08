@@ -200,7 +200,6 @@ fun.conf.templates = {
     dualHelios: fun.utils.format('%s/dual-helios.html', fun.conf.html),
 
 
-
     accountListItem: fun.utils.format('%s/accountListItem.html', fun.conf.html),
     
     recordRow: fun.utils.format('%s/recordRow.html', fun.conf.html),
