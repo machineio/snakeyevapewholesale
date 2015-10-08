@@ -123,12 +123,12 @@ fun.Router = Backbone.Router.extend({
         });
 
         // building-rba-kayfun
-        fun.instances.buildingRbaKayfun = new fun.views.({
+        fun.instances.buildingRbaKayfun = new fun.views.buildingRbaKayfun({
             el:"#fun-building-rba-kayfun"
         });
 
         // building-rba-kayfun
-        fun.instances.rbaWdualHelios = new fun.views.({
+        fun.instances.rbaWdualHelios = new fun.views.rbaWdualHelios({
             el:"#fun-rba-w-dual-helios"
         });
 
