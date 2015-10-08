@@ -1,6 +1,6 @@
 fun.views.dashboard = Backbone.View.extend({
    
-    /**
+    /*
     * Bind the event functions to the different HTML elements
     */
     events: {
@@ -13,9 +13,7 @@ fun.views.dashboard = Backbone.View.extend({
         // initialize view constructor
         'use strict';
         fun.containers.dashboard = this.$el;
-
         this.account = localStorage.getItem("username");
-
         this.userId = localStorage.getItem("UserId");
     },
 
@@ -27,8 +25,6 @@ fun.views.dashboard = Backbone.View.extend({
             this.$el.html(template);
 
             // DOM cache stuff on form fields.
-
-            // Discover
             this.discoverMerchant = this.$('#discover-merchant');
             this.discoverAddress = this.$('#discover-address');
             this.discoverPhone = this.$('#discover-phone');
@@ -76,11 +72,9 @@ fun.views.dashboard = Backbone.View.extend({
         console.log('add funds discover');
 
         userId = localStorage.getItem("UserId");
-
         merchant = this.discoverMerchant.val();
         address = this.discoverAddress.val();
         phone = this.discoverPhone.val();
-
         email = this.discoverEmail.val();
         funds = this.discoverFunds.val();
         ccNumber = this.discoverCCnumber.val();
