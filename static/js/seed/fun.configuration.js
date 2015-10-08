@@ -197,7 +197,7 @@ fun.conf.templates = {
     coilBuilding: fun.utils.format('%s/coil-building.html', fun.conf.html),
     rdaWcottonAgi: fun.utils.format('%s/rda-w-cotton-agi.html', fun.conf.html),
     buildingRbaKayfun: fun.utils.format('%s/building-rba-kayfun.html', fun.conf.html),
-    
+
 
 
     accountListItem: fun.utils.format('%s/accountListItem.html', fun.conf.html),
@@ -284,7 +284,7 @@ fun.conf.hash = {
 
     vapingGuide: '#vaping-guide',
     industryResearch: '#industry-research',
-    fillingRank: '#filling-tank',
+    fillingTank: '#filling-tank',
     fillingCartomizers: '#filling-cartomizers',
     aboutRebuildables: '#about-rebuildables',
     coilBuilding: '#coil-building',
