@@ -115,49 +115,49 @@ fun.Router = Backbone.Router.extend({
     vapingGuide: function(){
         fun.utils.hideAll();
         fun.instances.vapingGuide.render();
-        console.log('vaping guide');
+        fun.instances.footer.render();
     },
 
     industryResearch: function(){
         fun.utils.hideAll();
-
-        console.log('industry research');
+        fun.instances.industryResearch.render();
+        fun.instances.footer.render();
     },
 
     fillingRank: function(){
         fun.utils.hideAll();
-
-        console.log('filling rank');
+        fun.instances.fillingRank.render();
+        fun.instances.footer.render();
     },
 
     fillingCartomizers: function(){
         fun.utils.hideAll();
-
-        console.log('filling cartomizers');
+        fun.instances.fillingCartomizers.render();
+        fun.instances.footer.render();
     },
 
     aboutRebuildables: function(){
         fun.utils.hideAll();
-
-        console.log('about rebuildables');
+        fun.instances.aboutRebuildables.render();
+        fun.instances.footer.render();
     },
 
     coilBuilding: function(){
         fun.utils.hideAll();
-
-        console.log('coil building');
+        fun.instances.coilBuilding.render();
+        fun.instances.footer.render();
     },
 
     rdaWcottonAgi: function(){
         fun.utils.hideAll();
-
-        console.log('rda wcotton agi');
+        fun.instances.rdaWcottonAgi.render();
+        fun.instances.footer.render();
     },
 
     buildingRbaKayfun: function(){
         fun.utils.hideAll();
-
-        console.log('building rba kayfun');
+        fun.instances.buildingRbaKayfun.render();
+        fun.instances.footer.render();
     },
 
     dashboard: function(){
