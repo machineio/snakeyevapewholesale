@@ -1,4 +1,4 @@
-fun.views.tanks = Backbone.View.extend({
+fun.views.waxcdb = Backbone.View.extend({
 
     /*
     * Bind the event functions to the different HTML elements
@@ -11,14 +11,14 @@ fun.views.tanks = Backbone.View.extend({
     * Class constructor
     */
     initialize: function(options){
-        fun.containers.tanks = this.$el;
+        fun.containers.waxcdb = this.$el;
     },
 
     /**
     * Render view
     */
     render: function(){
-        var template = _.template(fun.utils.getTemplate(fun.conf.templates.tanks));
+        var template = _.template(fun.utils.getTemplate(fun.conf.templates.waxcdb));
         this.$el.html(template);
         this.$el.show();
     }
