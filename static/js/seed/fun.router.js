@@ -283,6 +283,69 @@ fun.Router = Backbone.Router.extend({
         fun.instances.footer.render();
     },
 
+    boxMods: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.boxMods.render();
+        fun.instances.footer.render();
+    },
+
+    importMods: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.importMods.render();
+        fun.instances.footer.render();
+    },
+
+    highend: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.highend.render();
+        fun.instances.footer.render();
+    },
+
+    ecigars: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.ecigars.render();
+        fun.instances.footer.render();
+    },
+
+    starterKits: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.starterKits.render();
+        fun.instances.footer.render();
+    },
+
+    batteries: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.batteries.render();
+        fun.instances.footer.render();
+    },
+
+    atomizers: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.atomizers.render();
+        fun.instances.footer.render();
+    },
+
+    dripping: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.dripping.render();
+        fun.instances.footer.render();
+    },
+
+    tanks: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.tanks.render();
+        fun.instances.footer.render();
+    },
+
     dashboard: function(){
         fun.utils.hideAll();
         fun.utils.showLanding();
