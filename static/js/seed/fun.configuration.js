@@ -191,7 +191,7 @@ fun.conf.templates = {
     vapingGuide: fun.utils.format('%s/vaping-guide.html', fun.conf.html),
 
     industryResearch: fun.utils.format('%s/industry-research.html', fun.conf.html),
-    fillingRank: fun.utils.format('%s/filling-rank.html', fun.conf.html),
+    fillingTank: fun.utils.format('%s/filling-tank.html', fun.conf.html),
     fillingCartomizers: fun.utils.format('%s/filling-cartomizers.html', fun.conf.html),
     aboutRebuildables: fun.utils.format('%s/about-rebuildables.html', fun.conf.html),
     coilBuilding: fun.utils.format('%s/coil-building.html', fun.conf.html),
