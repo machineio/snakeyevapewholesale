@@ -174,6 +174,46 @@ fun.Router = Backbone.Router.extend({
             el:"#fun-tanks"
         });
 
+        //andirondack
+        fun.instances.andirondack = new fun.views.andirondack({
+            el:"#fun-andirondack"
+        });
+
+        //ism
+        fun.instances.ism = new fun.views.ism({
+            el:"#fun-ism"
+        });
+
+        //kingcloud
+        fun.instances.kingcloud = new fun.views.kingcloud({
+            el:"#fun-kingcloud"
+        });
+
+        //jetfuel
+        fun.instances.jetfuel = new fun.views.jetfuel({
+            el:"#fun-jetfuel"
+        });
+
+        //coils
+        fun.instances.coils = new fun.views.coils({
+            el:"#fun-coils"
+        });
+
+        //dryherb
+        fun.instances.dryherb = new fun.views.dryherb({
+            el:"#fun-dryherb"
+        });
+
+        //waxcdb
+        fun.instances.waxcdb = new fun.views.waxcdb({
+            el:"#fun-waxcdb"
+        });
+
+        //novelty
+        fun.instances.novelty = new fun.views.novelty({
+            el:"#fun-novelty"
+        });
+
         // footer
         fun.instances.footer = new fun.views.footer({
             el:"#fun-footer"

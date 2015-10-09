@@ -210,7 +210,18 @@ fun.conf.templates = {
     dripping: fun.utils.format('%s/dripping.html', fun.conf.html),
     tanks: fun.utils.format('%s/tanks.html', fun.conf.html),
 
-    
+
+    andirondack: fun.utils.format('%s/andirondack.html', fun.conf.html),
+    ism: fun.utils.format('%s/ism.html', fun.conf.html),
+    kingcloud: fun.utils.format('%s/kingcloud.html', fun.conf.html),
+    fogsbrew: fun.utils.format('%s/fogsbrew.html', fun.conf.html),
+    jetfuel: fun.utils.format('%s/jetfuel.html', fun.conf.html),
+    coils: fun.utils.format('%s/coils.html', fun.conf.html),
+    dryherb: fun.utils.format('%s/dryherb.html', fun.conf.html),
+    waxcdb: fun.utils.format('%s/waxcdb.html', fun.conf.html),
+    novelty: fun.utils.format('%s/novelty.html', fun.conf.html),
+
+
     accountListItem: fun.utils.format('%s/accountListItem.html', fun.conf.html),
     
     recordRow: fun.utils.format('%s/recordRow.html', fun.conf.html),
@@ -312,6 +323,16 @@ fun.conf.hash = {
     atomizers: '#atomizers',
     dripping: '#dripping',
     tanks: '#tanks',
+
+    andirondack: '#andirondack',
+    ism: '#ism',
+    kingcloud: '#kingcloud',
+    fogsbrew: '#fogsbrew',
+    jetfuel: '#jetfuel',
+    coils: '#coils',
+    dryherb: '#dryherb',
+    waxcdb: '#waxcdb',
+    novelty: '#novelty',
 
 
     dashboard : '#dashboard',
