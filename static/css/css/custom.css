@@ -28,7 +28,7 @@
 	margin:0;
 	}
 .sec-element-inter .background {
-	background:#fff url(../placeholders/backgrounds/bg-3.jpg) no-repeat bottom center ;
+	background:#fff url(/static/placeholders/backgrounds/bg-3.jpg) no-repeat bottom center ;
 	height: 1200px; 
 	}
 .sec-element-inter .text-heading {
@@ -36,7 +36,7 @@
 	}
 .sec-element-media {
 	padding:60px 0;
-	background:url(../placeholders/backgrounds/bg-4.png) no-repeat top center;
+	background:url(/static/placeholders/backgrounds/bg-4.png) no-repeat top center;
 	}
 .one-section-mask-1,
 .mask-color {
@@ -49,27 +49,27 @@
 	display:block;
 	}
 .page-section-1 {
-	background:#000 url(../placeholders/portfolio/photo/15a.jpg) 0 no-repeat fixed;
+	background:#000 url(/static/placeholders/portfolio/photo/15a.jpg) 0 no-repeat fixed;
     height: 800px;
 	}
 .page-section-2 {
-	background:#000 url(../placeholders/backgrounds/bg-5.jpg) 0 no-repeat fixed;
+	background:#000 url(/static/placeholders/backgrounds/bg-5.jpg) 0 no-repeat fixed;
     height: 1200px;
 	}		
 .page-section-work {
-	background:#1c222f url(../placeholders/backgrounds/desktop.jpg) -50% 0 no-repeat fixed;
+	background:#1c222f url(/static/placeholders/backgrounds/desktop.jpg) -50% 0 no-repeat fixed;
     height:1400px; 
 	}
 .sec-recent-work1 {
 	padding:30px 0;
-	background:#252525 url(../placeholders/backgrounds/recent-work.png);
+	background:#252525 url(/static/placeholders/backgrounds/recent-work.png);
 	}
 .sec-recent-work1 .portfolio {
 	margin:30px 0;
 	}
 	
 .designer {
-    background:url(../placeholders/backgrounds/designer.png) top right no-repeat fixed;
+    background:url(/static/placeholders/backgrounds/designer.png) top right no-repeat fixed;
 }
 #hello {
 	padding:50px 0;
@@ -103,7 +103,7 @@
 	position:relative;
 	}
 .about-intro .hero-bg {
-    background: url("../placeholders/backgrounds/bg-5.jpg") no-repeat fixed 0 center #000000;
+    background: url("/static/placeholders/backgrounds/bg-5.jpg") no-repeat fixed 0 center #000000;
     height: 1600px;
 }
 .about-intro .intro {
@@ -184,7 +184,7 @@
 	margin:30px auto 50px;
 	border-bottom: 5px solid #F4F4F4;
 	border-top: 5px solid #F4F4F4;
-	background:url(../placeholders/backgrounds/photography.png);
+	background:url(/static/placeholders/backgrounds/photography.png);
 	}
 	
 /*Abouts hero*/
@@ -192,14 +192,14 @@
 	height:600px;
 	}	
 .abouts-hero .hero-bg {
-	background: url("../placeholders/backgrounds/bg-6.jpg") no-repeat fixed 0 center #000000;
+	background: url("/static/placeholders/backgrounds/bg-6.jpg") no-repeat fixed 0 center #000000;
     height: 1200px;
 	}	
 /*===========
  SECTION PAGE
 =============*/
 .image-full {
-	background:url(../placeholders/backgrounds/rain.jpg);
+	background:url(/static/placeholders/backgrounds/rain.jpg);
 	background-size:cover;
 	}
 #video-sec-1 {
@@ -223,7 +223,7 @@
 	background:#f4f4f4;
 	}
 .h2-gallery .background {
-	background:url(../placeholders/photographer.png) right bottom no-repeat fixed;
+	background:url(/static/placeholders/photographer.png) right bottom no-repeat fixed;
     height: 1200px;
 	}	
 .h2-counter {
@@ -282,7 +282,7 @@
 	padding:50px 0 100px 0;
 	}
 	.h3-work .background {
-		background:url(../placeholders/backgrounds/h3-bg-work.jpg) bottom repeat-y;
+		background:url(/static/placeholders/backgrounds/h3-bg-work.jpg) bottom repeat-y;
 		height:1600px;
 		}
 	.h3-work .g-carousel {
@@ -555,7 +555,7 @@
  SHOP-3
 =============*/
 .shop3 {
-	background:url(../placeholders/backgrounds/bg-13.jpg) no-repeat fixed bottom center #000;
+	background:url(/static/placeholders/backgrounds/bg-13.jpg) no-repeat fixed bottom center #000;
 	background-size:cover;
 	}
 .shop3 #filters a {
@@ -608,7 +608,7 @@
 .shop3 .customers-area {
 	margin:25px 0 0 0;
 	padding:50px 0;
-	background:url(../placeholders/backgrounds/bg-12.jpg) no-repeat fixed center bottom #000;
+	background:url(/static/placeholders/backgrounds/bg-12.jpg) no-repeat fixed center bottom #000;
 	}
 .shop3 .customers-area p.test {
 	color:#d0d0d0;
@@ -825,7 +825,7 @@
 	}	
 #onepage-1 #customer .background {
 	height:1200px;
-	background:url(../placeholders/backgrounds/bg-14.jpg) bottom center fixed no-repeat #373c41;
+	background:url(/static/placeholders/backgrounds/bg-14.jpg) bottom center fixed no-repeat #373c41;
 	opacity:.1;
 	}
 #onepage-1 #customer p.test {
@@ -843,7 +843,7 @@
 	opacity:1;	
 	}
 #onepage-1 #blog {
-	background:url(../placeholders/backgrounds/bg-11.jpg) top center no-repeat fixed;
+	background:url(/static/placeholders/backgrounds/bg-11.jpg) top center no-repeat fixed;
 	background-size:cover;
 	color:#ffffff;
 	padding:80px 0;

@@ -307,7 +307,7 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button {
  display: none;
 }
 input[type=search] {
-	/*background:url(../placeholders/search-icon.png) no-repeat 15px center;*/
+	/*background:url(/static/placeholders/search-icon.png) no-repeat 15px center;*/
 	padding: 0;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
@@ -1435,7 +1435,7 @@ All this is done for any sub-level being entered.
 		right:0;
 		height:100%;
 		background-color:#f0f0f0;
-		background-image:url(../placeholders/bg-push.png);
+		background-image:url(/static/placeholders/bg-push.png);
 		background-position:bottom center;
 		background-repeat:no-repeat;
 		text-align:center;

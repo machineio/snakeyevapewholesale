@@ -167,7 +167,7 @@ html.full-screen-shop body {
 	height: 100%;
 	-webkit-transition: -webkit-transform 0.6s cubic-bezier(.7,0,.3,1);
 	transition: transform 0.6s cubic-bezier(.7,0,.3,1);
-	background:url(../placeholders/backgrounds/bg-s4.jpg) top center no-repeat;
+	background:url(/static/placeholders/backgrounds/bg-s4.jpg) top center no-repeat;
 	background-size:cover;
 }
 
