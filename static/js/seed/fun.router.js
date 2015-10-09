@@ -199,6 +199,11 @@ fun.Router = Backbone.Router.extend({
             el:"#fun-kingcloud"
         });
 
+        //fogsbrew
+        fun.instances.fogsbrew = new fun.views.fogsbrew({
+            el:"#fun-fogsbrew"
+        });
+
         //jetfuel
         fun.instances.jetfuel = new fun.views.jetfuel({
             el:"#fun-jetfuel"
