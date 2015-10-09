@@ -127,11 +127,10 @@ fun.Router = Backbone.Router.extend({
             el:"#fun-building-rba-kayfun"
         });
 
-        // building-rba-kayfun
-        fun.instances.rbaWdualHelios = new fun.views.rbaWdualHelios({
-            el:"#fun-rba-w-dual-helios"
+        // dual-helios
+        fun.instances.dualHelios = new fun.views.dualHelios({
+            el:"#fun-dual-helios"
         });
-
 
         // footer
         fun.instances.footer = new fun.views.footer({
@@ -211,10 +210,10 @@ fun.Router = Backbone.Router.extend({
         fun.instances.footer.render();
     },
 
-    rbaWdualHelios: function(){
+    dualHelios: function(){
         fun.utils.hideAll();
         fun.utils.hideLanding();
-        fun.instances.rbaWdualHelios.render();
+        fun.instances.dualHelios.render();
         fun.instances.footer.render();
     },
 
