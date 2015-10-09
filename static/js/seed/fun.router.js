@@ -149,6 +149,7 @@ fun.Router = Backbone.Router.extend({
 
     landing: function(){
         fun.utils.hideAll();
+        fun.utils.showLanding();
         //fun.instances.navbar.render();
         //fun.instances.landing.render();
         fun.instances.footer.render();
@@ -156,54 +157,63 @@ fun.Router = Backbone.Router.extend({
 
     vapingGuide: function(){
         fun.utils.hideAll();
+        fun.utils.hideLanding();
         fun.instances.vapingGuide.render();
         fun.instances.footer.render();
     },
 
     industryResearch: function(){
         fun.utils.hideAll();
+        fun.utils.hideLanding();
         fun.instances.industryResearch.render();
         fun.instances.footer.render();
     },
 
     fillingTank: function(){
         fun.utils.hideAll();
+        fun.utils.hideLanding();
         fun.instances.fillingTank.render();
         fun.instances.footer.render();
     },
 
     fillingCartomizers: function(){
         fun.utils.hideAll();
+        fun.utils.hideLanding();
         fun.instances.fillingCartomizers.render();
         fun.instances.footer.render();
     },
 
     aboutRebuildables: function(){
         fun.utils.hideAll();
+        fun.utils.hideLanding();
         fun.instances.aboutRebuildables.render();
         fun.instances.footer.render();
     },
 
     coilBuilding: function(){
         fun.utils.hideAll();
+        fun.utils.hideLanding();
         fun.instances.coilBuilding.render();
         fun.instances.footer.render();
     },
 
     rdaWcottonAgi: function(){
         fun.utils.hideAll();
+        fun.utils.hideLanding();
         fun.instances.rdaWcottonAgi.render();
         fun.instances.footer.render();
     },
 
     buildingRbaKayfun: function(){
         fun.utils.hideAll();
+        fun.utils.hideLanding();
         fun.instances.buildingRbaKayfun.render();
         fun.instances.footer.render();
     },
 
     rbaWdualHelios: function(){
         fun.utils.hideAll();
+        fun.utils.hideLanding();
         fun.instances.rbaWdualHelios.render();
         fun.instances.footer.render();
     },

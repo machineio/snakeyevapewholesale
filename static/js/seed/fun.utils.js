@@ -257,23 +257,23 @@ fun.utils.hideAll = function() {
 
 
 fun.utils.hideLanding = function(){
-    $("#landing-00").removeClass("show").addClass("hide");
+    $("#carousel-example-generic").removeClass("show").addClass("hide");
     $("#landing-01").removeClass("show").addClass("hide");
     $("#landing-02").removeClass("show").addClass("hide");
     $("#landing-03").removeClass("show").addClass("hide");
     $("#landing-04").removeClass("show").addClass("hide");
     $("#landing-05").removeClass("show").addClass("hide");
-    $("#call-to-action").removeClass("show").addClass("hide");
+    $("#main").removeClass("show").addClass("hide");
 };
 
 fun.utils.showLanding = function(){
-    $("#landing-00").removeClass("hide").addClass("show");
+    $("#carousel-example-generic0").removeClass("hide").addClass("show");
     $("#landing-01").removeClass("hide").addClass("show");
     $("#landing-02").removeClass("hide").addClass("show");
     $("#landing-03").removeClass("hide").addClass("show");
     $("#landing-04").removeClass("hide").addClass("show");
     $("#landing-05").removeClass("hide").addClass("show");
-    $("#call-to-action").removeClass("hide").addClass("show");
+    $("#main").removeClass("hide").addClass("show");
 };
 
 /**
