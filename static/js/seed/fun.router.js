@@ -14,6 +14,16 @@ fun.Router = Backbone.Router.extend({
     rdaWcottonAgi: '#rda-w-cotton-agi',
     buildingRbaKayfun: '#building-rba-kayfun',
 
+    boxMods: '#box-mods'
+    importMods: '#import-mods'
+    highend: '#highend'
+    ecigars: '#ecigars'
+    starterKits: '#starter-kits'
+    batteries: '#batteries'
+    atomizers: '#atomizers'
+    dripping: '#dripping'
+    tanks: '#tanks'
+
 
 
     */
@@ -37,6 +47,16 @@ fun.Router = Backbone.Router.extend({
         "rda-w-cotton-agi":"rdaWcottonAgi",
         "building-rba-kayfun":"buildingRbaKayfun",
         "dual-helios": "dualHelios",
+
+        "box-mods": "boxMods",
+        "import-mods": "importMods",
+        "highend": "highend",
+        "ecigars": "ecigars",
+        "starter-kits": "starterKits",
+        "batteries": "batteries",
+        "atomizers": "atomizers",
+        "dripping": "dripping",
+        "tanks": "tanks",
 
         "reports": "reports",
         "reports/p:page": "reports",
@@ -131,6 +151,51 @@ fun.Router = Backbone.Router.extend({
         // dual-helios
         fun.instances.dualHelios = new fun.views.dualHelios({
             el:"#fun-dual-helios"
+        });
+
+        // box-mods
+        fun.instances.boxMods = new fun.views.boxMods({
+            el:"#fun-box-mods"
+        });
+
+        // import mods
+        fun.instances.importMods = new fun.views.importMods({
+            el:"#fun-import-mods"
+        });
+
+        // highend
+        fun.instances.highend = new fun.views.highend({
+            el:"#fun-highend"
+        });
+
+        // ecigars
+        fun.instances.ecigars = new fun.views.ecigars({
+            el:"#fun-ecigars"
+        });
+
+        // starter-kits
+        fun.instances.starterKits = new fun.views.starterKits({
+            el:"#fun-starter-kits"
+        });
+
+        // batteries
+        fun.instances.batteries = new fun.views.batteries({
+            el:"#fun-batteries"
+        });
+
+        // atomizers
+        fun.instances.atomizers = new fun.views.atomizers({
+            el:"#fun-atomizers"
+        });
+
+        // dripping
+        fun.instances.dripping = new fun.views.dripping({
+            el:"#fun-dripping"
+        });
+
+        //tanks
+        fun.instances.tanks = new fun.views.tanks({
+            el:"#fun-tanks"
         });
 
         // footer
