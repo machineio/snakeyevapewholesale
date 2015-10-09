@@ -199,7 +199,7 @@ fun.conf.templates = {
     buildingRbaKayfun: fun.utils.format('%s/building-rba-kayfun.html', fun.conf.html),
     dualHelios: fun.utils.format('%s/dual-helios.html', fun.conf.html),
 
-    batteries: fun.utils.forma('%s/batteries.html', fun.conf.html),
+    batteries: fun.utils.format('%s/batteries.html', fun.conf.html),
 
 
     accountListItem: fun.utils.format('%s/accountListItem.html', fun.conf.html),
