@@ -1,4 +1,4 @@
-fun.views.rbaWdualHelios = Backbone.View.extend({
+fun.views.dualHelios = Backbone.View.extend({
 
     /*
     * Bind the event functions to the different HTML elements
@@ -11,14 +11,14 @@ fun.views.rbaWdualHelios = Backbone.View.extend({
     * Class constructor
     */
     initialize: function(options){
-        fun.containers.rbaWdualHelios = this.$el;
+        fun.containers.dualHelios = this.$el;
     },
 
     /**
     * Render view
     */
     render: function(){
-        var template = _.template(fun.utils.getTemplate(fun.conf.templates.rbaWdualHelios));
+        var template = _.template(fun.utils.getTemplate(fun.conf.templates.dualHelios));
         this.$el.html(template);
         this.$el.show();
     }
