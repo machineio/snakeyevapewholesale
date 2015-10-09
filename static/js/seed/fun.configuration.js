@@ -199,9 +199,18 @@ fun.conf.templates = {
     buildingRbaKayfun: fun.utils.format('%s/building-rba-kayfun.html', fun.conf.html),
     dualHelios: fun.utils.format('%s/dual-helios.html', fun.conf.html),
 
+
+    boxMods: fun.utils.format('%s/boxMods.html', fun.conf.html),
+    importMods: fun.utils.format('%s/importMods.html', fun.conf.html),
+    highend: fun.utils.format('%s/highend.html', fun.conf.html),
+    ecigars: fun.utils.format('%s/ecigars.html', fun.conf.html),
+    starterKits: fun.utils.format('%s/starterKits.html', fun.conf.html),
     batteries: fun.utils.format('%s/batteries.html', fun.conf.html),
+    atomizers: fun.utils.format('%s/atomizers.html', fun.conf.html),
+    dripping: fun.utils.format('%s/dripping.html', fun.conf.html),
+    tanks: fun.utils.format('%s/tanks.html', fun.conf.html),
 
-
+    
     accountListItem: fun.utils.format('%s/accountListItem.html', fun.conf.html),
     
     recordRow: fun.utils.format('%s/recordRow.html', fun.conf.html),
