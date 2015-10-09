@@ -219,9 +219,8 @@ fun.Router = Backbone.Router.extend({
     },
 
     dashboard: function(){
-
         fun.utils.hideAll();
-
+        fun.utils.showLanding();
         //fun.instances.navbar.render();
         //fun.instances.landing.render();
         fun.instances.footer.render();
