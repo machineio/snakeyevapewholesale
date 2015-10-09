@@ -34,6 +34,16 @@ fun.Router = Backbone.Router.extend({
         "dripping": "dripping",
         "tanks": "tanks",
 
+        "andirondack": "andirondack",
+        "ism": "ism",
+        "kingcloud": "kingcloud",
+        "fogsbrew": "fogsbrew",
+        "jetfuel": "jetfuel",
+        "coils": "coils",
+        "dryherb": "dryherb",
+        "waxcdb": "waxcdb",
+        "novelty": "novelty",
+
         "reports": "reports",
         "reports/p:page": "reports",
 
@@ -359,6 +369,69 @@ fun.Router = Backbone.Router.extend({
         fun.utils.hideAll();
         fun.utils.hideLanding();
         fun.instances.tanks.render();
+        fun.instances.footer.render();
+    },
+
+    andirondack: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.andirondack.render();
+        fun.instances.footer.render();
+    },
+
+    ism: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.ism.render();
+        fun.instances.footer.render();
+    },
+
+    kingcloud: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.kingcloud.render();
+        fun.instances.footer.render();
+    },
+
+    fogsbrew: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.fogsbrew.render();
+        fun.instances.footer.render();
+    },
+
+    jetfuel: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.jetfuel.render();
+        fun.instances.footer.render();
+    },
+
+    coils: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.coils.render();
+        fun.instances.footer.render();
+    },
+
+    dryherb: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.dryherb.render();
+        fun.instances.footer.render();
+    },
+
+    waxcdb: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.waxcdb.render();
+        fun.instances.footer.render();
+    },
+
+    novelty: function(){
+        fun.utils.hideAll();
+        fun.utils.hideLanding();
+        fun.instances.novelty.render();
         fun.instances.footer.render();
     },
 
