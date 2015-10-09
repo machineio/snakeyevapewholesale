@@ -36,6 +36,7 @@ fun.Router = Backbone.Router.extend({
         "coil-building": "coilBuilding",
         "rda-w-cotton-agi":"rdaWcottonAgi",
         "building-rba-kayfun":"buildingRbaKayfun",
+        "dual-helios": "dualHelios",
 
         "reports": "reports",
         "reports/p:page": "reports",
