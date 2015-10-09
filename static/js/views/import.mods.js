@@ -1,4 +1,4 @@
-fun.views.dualHelios = Backbone.View.extend({
+fun.views.importMods = Backbone.View.extend({
 
     /*
     * Bind the event functions to the different HTML elements
@@ -11,14 +11,14 @@ fun.views.dualHelios = Backbone.View.extend({
     * Class constructor
     */
     initialize: function(options){
-        fun.containers.dualHelios = this.$el;
+        fun.containers.importMods = this.$el;
     },
 
     /**
     * Render view
     */
     render: function(){
-        var template = _.template(fun.utils.getTemplate(fun.conf.templates.dualHelios));
+        var template = _.template(fun.utils.getTemplate(fun.conf.templates.importMods));
         this.$el.html(template);
         this.$el.show();
     }
