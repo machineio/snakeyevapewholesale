@@ -7,7 +7,7 @@ fun.Router = Backbone.Router.extend({
     
     vapingGuide: '#vaping-guide',
     industryResearch: '#industry-research',
-    fillingRank: '#filling-tank',
+    fillingTank: '#filling-tank',
     fillingCartomizers: '#filling-cartomizers',
     aboutRebuildables: '#about-rebuildables',
     coilBuilding: '#coil-building',
@@ -30,7 +30,7 @@ fun.Router = Backbone.Router.extend({
 
         "vaping-guide": "vapingGuide",
         "industry-research": "industryResearch",
-        "filling-rank": "fillingRank",
+        "filling-tank": "fillingTank",
         "filling-cartomizers":"fillingCartomizers",
         "about-rebuildables": "aboutRebuildables",
         "coil-building": "coilBuilding",
@@ -166,9 +166,9 @@ fun.Router = Backbone.Router.extend({
         fun.instances.footer.render();
     },
 
-    fillingRank: function(){
+    fillingTank: function(){
         fun.utils.hideAll();
-        fun.instances.fillingRank.render();
+        fun.instances.fillingTank.render();
         fun.instances.footer.render();
     },
 
