@@ -2,30 +2,6 @@ fun.Router = Backbone.Router.extend({
 
     /*
      Seed routes
-
-
-    
-    vapingGuide: '#vaping-guide',
-    industryResearch: '#industry-research',
-    fillingTank: '#filling-tank',
-    fillingCartomizers: '#filling-cartomizers',
-    aboutRebuildables: '#about-rebuildables',
-    coilBuilding: '#coil-building',
-    rdaWcottonAgi: '#rda-w-cotton-agi',
-    buildingRbaKayfun: '#building-rba-kayfun',
-
-    boxMods: '#box-mods'
-    importMods: '#import-mods'
-    highend: '#highend'
-    ecigars: '#ecigars'
-    starterKits: '#starter-kits'
-    batteries: '#batteries'
-    atomizers: '#atomizers'
-    dripping: '#dripping'
-    tanks: '#tanks'
-
-
-
     */
     routes: {
         "": "home",

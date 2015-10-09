@@ -292,6 +292,16 @@ fun.conf.hash = {
     buildingRbaKayfun: '#building-rba-kayfun',
     dualHelios: '#dual-helios',
 
+    boxMods: '#box-mods',
+    importMods: '#import-mods',
+    highend: '#highend',
+    ecigars: '#ecigars',
+    starterKits: '#starter-kits',
+    batteries: '#batteries',
+    atomizers: '#atomizers',
+    dripping: '#dripping',
+    tanks: '#tanks',
+
 
     dashboard : '#dashboard',
     dashboardWithAccount: '#dashboard/a{account}',
