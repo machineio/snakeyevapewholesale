@@ -1,4 +1,4 @@
-fun.views.tanks = Backbone.View.extend({
+fun.views.coils = Backbone.View.extend({
 
     /*
     * Bind the event functions to the different HTML elements
@@ -11,14 +11,14 @@ fun.views.tanks = Backbone.View.extend({
     * Class constructor
     */
     initialize: function(options){
-        fun.containers.tanks = this.$el;
+        fun.containers.coils = this.$el;
     },
 
     /**
     * Render view
     */
     render: function(){
-        var template = _.template(fun.utils.getTemplate(fun.conf.templates.tanks));
+        var template = _.template(fun.utils.getTemplate(fun.conf.templates.coils));
         this.$el.html(template);
         this.$el.show();
     }
